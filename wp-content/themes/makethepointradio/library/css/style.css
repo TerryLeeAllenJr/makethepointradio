@@ -1,0 +1,1121 @@
+@import "fonts.css";
+
+* {
+    background: transparent;
+    border: 0;
+    color: #585858;
+    font-family: 'Verlag-Book', Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: top;
+}
+
+html { background: #fff; }
+body { margin: 0 auto; overflow-x: hidden; }
+
+:focus { outline: 0; -moz-outline-style: none; }
+textarea { resize: none; overflow: auto; }
+
+h1,h2,h3,h4,h5,h6 {
+    color: #bb2529;
+    font-family: 'Verlag-Bold', Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    line-height: 1em;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: .8em;
+    margin-bottom: 10px !important;
+    text-indent: 10px;
+}
+a { color: #3c3b40; }
+
+a.box-link {
+    font-size: 1.3em;
+    padding: 10px 0;
+}
+
+span {
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.wrapper { margin: 0 auto; max-width: 85.5rem; }
+.row { max-width: 85.5rem; }
+
+.content {
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+.extralight { font-family: 'Verlag-ExtraLight', sans-serif; }
+.light { font-family: 'Verlag-Light', sans-serif; }
+.bold { font-family: 'Verlag-Bold', sans-serif; }
+.black { font-family: 'Verlag-Black', sans-serif; }
+.gray { color: #595959; }
+.red { color: #bb2529; }
+
+.ad {
+    padding: 0;
+    text-align: center;
+}
+header .ad{margin-top:10px;}
+
+.ad h4 { color: #fff; }
+
+.dj-img, .dj-info, .right { padding-right: 0; }
+.tagline, .dj-img, .left { padding-left: 0; }
+
+.button {
+    background: #bb2529;
+    color: #fff;
+    font-family: 'Verlag-Bold', sans-serif;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    -moz-transition: background-color 200ms ease-out;
+    -webkit-transition: background-color 200ms ease-out;
+    transition: background-color 200ms ease-out;
+}
+
+.button:hover { background: #9e1418; }
+
+/*---header---*/
+.logo-tagline {
+    border-bottom: 2px solid #f2f2f2;
+    margin: 5px 0 0 0;
+    padding-bottom: 5px;
+}
+
+.logo img {
+    display: block;
+    margin: 0 auto;
+}
+
+.tagline {
+	margin-top: 15px;
+	text-align: center;
+}
+
+.tagline h3 { font-family: 'Verlag-ExtraLight', sans-serif; margin:0 0!important;}
+
+.tagline .phone h3, .tagline .phone h5 {
+    display: inline-block;
+    font-family: 'Verlag-Black', sans-serif;
+    vertical-align: baseline;
+}
+
+.tagline .phone h3.numbers { font-family: 'Verlag-ExtraLight', sans-serif; }
+.tagline .phone h3 span.studio-line{font-size:.75em;margin-top:4px; vertical-align: baseline;}
+
+
+/*---nav---*/
+
+
+/**
+
+<ul>
+    <li>
+        <a>SHOWS</a>
+        <ul>
+            <li>
+                <a>MONDAY</a>
+                <ul>
+                    <li>
+                        <a>Link</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+**/
+
+
+header nav ul {
+    text-align: center;
+    margin: 0;
+}
+
+header nav ul li { position: relative; }
+
+header nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+header nav ul li a {
+    border-top: 2px solid #fff;
+    display: block;
+    font-size: 0.89em;
+    line-height: 1em;
+    padding: 15px;
+    text-transform: uppercase;
+}
+
+header nav li a:hover {
+    border-top: 2px solid #bb2529;
+    color: #3c3b40;
+}
+
+header nav li ul {
+    display: none;
+    position: absolute;
+}
+
+header nav ul li:hover > ul {
+    background: #fff;
+    -moz-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.5);
+    display: block;
+    z-index: 10;
+}
+
+header nav ul li:hover > ul li {
+    background: url('../images/bg-subnav.png') bottom center no-repeat;
+    display: block;
+    margin-bottom: 0;
+    padding: 0 10px;
+}
+
+header nav ul li ul li:hover{
+    background: #f4f4f4;
+}
+
+header nav ul li ul li:hover > ul{
+    z-index:30;
+    position:absolute;
+    left:100%;
+    top:0;
+}
+
+header nav ul li ul li:hover > ul li{
+    background: url('../images/bg-subnav.png') bottom center no-repeat;
+    display: block;
+    margin-bottom: 0;
+    padding: 0 10px;
+}
+
+/*---home---*/
+.feature {
+    background: url('../images/bg-now-playing.jpg') top center no-repeat;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    border-bottom: 10px solid #3c3b40;
+    border-top: 10px solid #3c3b40;
+    min-height: 482px;
+    padding: 85px 0 0 0;
+    margin: 0 0 10px 0;
+}
+
+.now-playing {
+    background: #fff;
+    -moz-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.dj-info .show-links { margin-top: 20px; }
+
+.listen-now {
+    background: url('../images/sprite-listen.png') 0 0 no-repeat;
+    display: block;
+    height: 59px;
+    width: 155px;
+}
+
+.listen-now:hover { background: url('../images/sprite-listen.png') 0 -59px no-repeat; }
+.listen-now span { display: none; }
+
+.button.box {
+    background: #fff;
+    border: 2px solid #3c3b40;
+    color: #3c3b40;
+    font-family: 'Verlag-Bold', sans-serif;
+    font-size: 1.3em;
+    margin: 0;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+.button.box:hover {
+    background: #bb2529;
+    border: 2px solid #bb2529;
+    color: #fff;
+}
+
+.feature form.columns { padding: 0; }
+.feature label { display: none; }
+
+.feature .subscribe input[type="email"] {
+    padding: 0 10px;
+    line-height: 35px;
+}
+
+.feature .subscribe input[type="submit"] {
+    padding: 0 10px;
+    line-height: 35px;
+}
+
+.feature ::-webkit-input-placeholder {
+    color: #b2b2b2;
+    font-family: 'Verlag-Light', sans-serif;
+    font-size: 1.6em;
+}
+
+.feature :-moz-placeholder {
+    color: #b2b2b2;
+    font-family: 'Verlag-Light', sans-serif;
+    font-size: 1.6em;
+}
+
+.feature ::-moz-placeholder {
+    color: #b2b2b2;
+    font-family: 'Verlag-Light', sans-serif;
+    font-size: 1.6em;
+}
+
+.feature :-ms-input-placeholder {
+    color: #b2b2b2;
+    font-family: 'Verlag-Light', sans-serif;
+    font-size: 1.6em;
+}
+
+.module-area .ad { margin-bottom: 20px; }
+.module { padding-bottom: 20px;}
+
+.module .title {
+    background: #134d89;
+    border-top: 10px solid #3c3b40;
+    color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+}
+.module{margin-top:20px;}
+.left .widget_modular:first-of-type, .right .widget_modular:first-of-type {margin-top:10px;}
+.left .widget_modular:first-of-type .title, .right .widget_modular:first-of-type .title{
+    border-top: none;
+    margin-bottom: 30px;
+}
+
+
+
+ul.news { padding-left: 0.9375em; }
+
+.news h4.headline {
+    color: #595959;
+    text-transform: none;
+}
+
+
+
+.news li:hover h4.headline, .poll a:hover h4 {
+    color: #bb2529;
+    text-decoration: underline;
+}
+
+.news img {
+    padding-bottom: 10px;
+    width: 35%;
+    float:left;
+    margin-right:10px;
+}
+.news img.img-small{
+    width:10%;
+}
+
+.news .small-block-grid-2 > li:nth-of-type(n) { padding: 0 0 1.25rem 1.875rem; }
+.news .small-block-grid-2 > li:nth-of-type(2n+1) { padding: 0 1.25rem 1.25rem 0.625rem; }
+
+.blog h3.headline, .featured h3, .poll h4 { color: #000; }
+.blog-preview{float:left;margin-right:10px;}
+.module p { margin-bottom: 0; }
+.blog a { float: right; }
+
+.blog a:hover {
+    color: #9e1418;
+    text-decoration: underline;
+}
+
+.fb-container{
+    position: relative;
+    overflow-x: auto; max-width: 100%;
+    margin:0 auto;
+}
+.fb-post{
+    margin-bottom:10px;
+}
+
+.poll h4 { text-transform: none; }
+.poll .poll-buttons, .poll a { text-align: right; }
+
+.poll .poll-buttons .button {
+    background: #595959;
+    margin: 1rem 0.5rem;
+    padding: 0.5rem 1.25rem;
+    text-transform: none;
+}
+
+.poll .poll-buttons .button:hover { background: #bb2529; }
+
+.poll a span {
+    font-family: 'Verlag-Light', sans-serif;
+    font-size: 2em;
+    line-height: 0.275em;
+}
+
+.weather .title { margin-bottom: 0; }
+.weather .columns.content { padding: 0; }
+
+.weather .head {
+    background: #3c3b40;
+    padding: 0.975rem 0;
+    text-transform: uppercase;
+}
+
+.weather .head .date, .weather .head .time { color: #fff; }
+
+.weather .head .numbers {
+    font-size: 1.19em;
+    line-height: 0.95rem;
+}
+
+.meridiem {
+    font-size: 0.9rem;
+    vertical-align: bottom;
+}
+
+.weather form {
+    border: 1px solid #3c3b40;
+    margin-bottom: 0;
+}
+
+.weather label { display: none; }
+
+.weather input[type="search"], .weather input[type="submit"] {
+    background: #f2f2f2;
+    border: none;
+    box-shadow: none;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.weather input[type="submit"] {
+    background: #f2f2f2 url('../images/icon-search.png') center center no-repeat;
+    cursor: pointer;
+}
+
+.weather ::-webkit-input-placeholder { color: #b2b2b2; text-transform: uppercase; }
+.weather :-moz-placeholder { color: #b2b2b2; text-transform: uppercase; }
+.weather ::-moz-input-placeholder { color: #b2b2b2; text-transform: uppercase; }
+.weather :-ms-input-placeholder { color: #b2b2b2; text-transform: uppercase; }
+
+.weather .city-info {
+    background: #fafafa;
+    border-left: 1px solid #3c3b40;
+    border-right: 1px solid #3c3b40;
+}
+
+.weather .city-info table {
+    background: transparent;
+    border: none;
+    margin: 0;
+    width: 100%;
+}
+
+.weather .thermometer {
+    border-bottom: 1px solid #3c3b40;
+    border-right: 1px solid #3c3b40;
+    min-height: 320px;
+    min-width: 30px;
+    width: 5%
+}
+
+.weather .thermometer.cold {
+    background: #fafafa url('../images/weather/bg-thermometer-cold.png') bottom center repeat-x;
+    background-size: contain;
+}
+
+.weather .thermometer.warm {
+    background: #fafafa url('../images/weather/bg-thermometer-warm.png') bottom center repeat-x;
+    background-size: contain;
+}
+
+.weather .thermometer.hot {
+    background: #fafafa url('../images/weather/bg-thermometer-hot.png') bottom center repeat-x;
+    background-size: contain;
+}
+
+.weather .main-stats {
+    padding: 0;
+    width: 95%;
+}
+
+.weather .city-info .main-stats td { padding: 0; }
+
+.weather .location td, .weather .forecast td {
+    border-bottom: 1px solid #3c3b40;
+    font-size: 1rem;
+    text-transform: uppercase;
+    width: 50%;
+}
+
+.weather .forecast table td { border-bottom: none; }
+.weather .main-stats .location td { padding: 0.975rem 0.9375rem; }
+.weather .location .city { float: left; }
+.weather .location .latlong { float: right; }
+
+.weather .current-stats {
+    border-right: 1px solid #3c3b40;
+    padding: 0;
+}
+
+.weather .main-stats .current-stats .temperature, .weather .main-stats .current-stats .sunrise, .weather .main-stats .current-stats .sunset { padding: 0.975rem 0.9375rem; }
+
+.weather .current-stats .temperature {
+    background: #3c3b40;
+    border-bottom: 1px solid #b2b2b2;
+}
+
+.weather .temperature h2 {
+    color: #b2b2b2;
+    display: inline-block;
+}
+
+.weather .feels-like {
+    color: #b2b2b2;
+    font-family: 'Verlag-Light';
+    margin-top: 10px;
+}
+
+.weather .sunrise, .weather .sunset {
+    background: #3c3b40;
+    border-right: 1px solid #b2b2b2;
+    text-align: center;
+    width: 50%;
+}
+
+.weather .sunrise h4, .weather .sunset h4 { color: #fff; }
+
+.weather .sunrise h6, .weather .sunset h6 {
+    color: #b2b2b2;
+    font-family: 'Verlag-Light';
+    margin-bottom: 5px;
+}
+
+.weather .chances {
+    border-bottom: none;
+    padding: 0;
+}
+
+.weather .main-stats .current-stats .precipitation, .weather .main-stats .current-stats .uv, .weather .main-stats .current-stats .pollen {
+    border-right: 1px solid #b2b2b2;
+    padding: 0.75rem 0.5rem;
+    width: 33.33333%;
+}
+
+.weather .precipitation p, .weather .uv p, .weather .pollen p {
+    font-size: 0.89rem;
+    line-height: 1rem;
+    text-align: center;
+    text-transform: none;
+}
+
+.weather .precipitation h5, .weather .uv h5, .weather .pollen h5 {
+    color: #3c3b40;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.weather .current-weather {
+    background: #e5e5e5;
+    padding: 0;
+}
+
+.weather .current-weather img {
+    display: block;
+    margin: 0 auto;
+}
+
+.weather .current-weather h3 {
+    color: #3c3b40;
+    padding: 10px 0.9375rem 20px 0.9375rem;
+    text-align: center;
+}
+
+.weather .white, .weather .temperature h2.white { color: #fff; }
+
+.weather .other-stats {
+    border-bottom: 1px solid #3c3b40;
+    padding: 0;
+}
+
+.weather .other-stats td { width: 20%; }
+
+.weather .other-stats .category {
+    background: #000;
+    border-right: 1px solid #3c3b40;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.weather .other-stats .info {
+    background: #3c3b40;
+    border-right: 1px solid #000;
+    padding: 1.5rem 0.625rem;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.weather .other-stats .info h4 {
+    color: #fff;
+    text-transform: none;
+}
+
+.weather .sunset, .weather .main-stats .current-stats .pollen, .weather .other-stats .visibility { border: none; }
+
+/*---subpages---*/
+.page { padding: 0 0 20px 0; }
+
+.page .title h2 {
+    background: #f2f2f2;
+    border-top: 10px solid #3c3b40;
+    color: #134d89;
+    font-family: 'Verlag-Black', sans-serif;
+    font-size: 2.75rem;
+    padding: 20px;
+    text-align: center;
+}
+
+.page .subtitle h2 {
+    background: #3c3b40;
+    color: #fff;
+    font-family: 'Verlag-Light', sans-serif;
+    font-size: 2.5rem;
+    padding: 10px 25px;
+}
+
+.page .row { padding: 0 0.9375rem; }
+
+.breadcrumbs {
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0.5625rem 0.9375rem;
+}
+
+.breadcrumbs a, .breadcrumbs > *.current a {
+    color: #134d89;
+    font-size: 1rem;
+}
+
+.breadcrumbs > *:before {
+    color: #134d89;
+    content: "›";
+    font-family: 'Verlag-Light', sans-serif;
+    font-size: 1.3rem;
+    line-height: 0.75em;
+}
+
+.page h3 { margin: 1.5rem 0; }
+.page h4 { margin-bottom: 0.5rem; }
+section h4 { color: #3c3b40; }
+
+/*---podcasts---*/
+
+#simplyattached-s2 a{
+    color:#134D89;
+}
+
+
+/*---calendar---*/
+
+/** These classes are generated by the ajax calendar plugin. Will have to change if plugin is changed. */
+.ui-datepicker-title select {
+    padding: 5px!important;
+}
+
+
+
+
+/*---ask the politician---*/
+/*---blog---*/
+
+/*---shows---*/
+.show-heading h2 {
+    color: #3c3b40;
+    display: inline-block;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+.show-heading h2.red { color: #bb2529; }
+
+.shows section {
+    display: inline-block;
+    margin: 0 1.5rem 1rem 0;
+    width: 250px;
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+}
+.shows a {
+    width: 250px;
+    height: 450px;
+    display: block;
+}
+.shows a .image {
+    width: 250px;
+    height: 290px;
+    background-size: cover !important;
+    overflow:hidden;
+}
+.shows .info {
+    min-height: 120px;
+    opacity: 1;
+    padding: 1rem 0;
+}
+
+.shows .info h3 {
+    color: #3c3b40;
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+.shows .info h4 {
+    color: #3c3b40;
+    font-family: 'Verlag-Light';
+    font-size: 1.3rem;
+    margin: 0.35rem 0;
+}
+
+.shows .info h3.time {
+    color: #bb2529;
+    font-family: 'Verlag-Black';
+    font-size: 1.6rem;
+}
+
+.shows a .bio {
+    background: rgba(60, 59, 64, .8);
+    width: 250px;
+    height: 450px;
+    text-align: justify;
+    opacity: 0;
+    overflow: hidden;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    transition: all 0.5s ease;
+}
+
+.shows a .bio p {
+    line-height: 1.5rem;
+    color: #fff;
+    margin: 0;
+}
+
+.shows a .bio p .bold, .dj-bio section p .bold { text-transform: uppercase; }
+
+.shows a:hover .bio {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.show-list table {
+    border: none;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.show-list table a {
+    display: block;
+    font-size: 1.1rem;
+}
+
+.show-list table .show-name { border-left: 20px solid transparent; }
+
+.show-list table .show-name a, .show-list table .show-name a:hover, .show-list table .time a, .show-list table .time a:hover {
+    color: #bb2529;
+    font-family: 'Verlag-Bold';
+}
+
+.show-list table tr:hover .show-name {
+    border-left: 20px solid #bb2529;
+    transition: border 0.5s ease;
+}
+
+/*---dj bio pages---*/
+.page .title.dj {
+    background: #f2f2f2;
+    border-top: 10px solid #3c3b40;
+    padding: 20px;
+}
+
+.page .title.dj h2 {
+    background: transparent;
+    border-top: none;
+    color: #134d89;
+    display: inline-block;
+    font-family: 'Verlag-Black', sans-serif;
+    font-size: 2.75rem;
+    padding: 0;
+    text-align: left;
+}
+
+.page .title.dj h2.red {
+    color: #bb2529;
+    float: right;
+}
+
+page .title.dj h2.red .light { font-family: 'Verlag-Light', sans-serif; }
+
+.dj-bio img, .dj-bio section { display: inline-block; }
+.dj-bio img { padding-right: 20px; }
+
+.dj-bio section {
+    max-width: 77%;
+    text-align: justify;
+}
+
+.dj-bio section a { color: #bb2529; }
+
+.dj-bio section a:hover {
+    color: #9e1418;
+    text-decoration: underline;
+}
+
+/*---contact---*/
+.instructions h2 {
+    border-bottom: 1px solid #f2f2f2;
+    color: #3c3b40;
+    font-size: 2rem;
+    line-height: 2.25rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2.75rem;
+}
+
+.contact form { margin-top: 0.25rem; }
+.contact label { display: none; }
+
+.contact input[type="text"], .contact input[type="email"], .contact textarea {
+    background: #f2f2f2;
+    border: none;
+    box-shadow: none;
+    font-size: 1.5rem;
+    height: 2.75rem;
+    line-height: 2.25rem;
+}
+
+.contact textarea { min-height: 10rem; }
+
+.contact .button {
+    background: #134d89;
+    font-family: 'Verlag-Black';
+    padding: 0.25rem 3rem;
+    text-transform: none;
+}
+
+.contact .button:hover { background: #083b6f; }
+
+.contact ::-webkit-input-placeholder {
+    color: #b2b2b2;
+    font-family: 'Verlag-Light', sans-serif;
+    font-size: 1.6rem;
+}
+
+.contact :-moz-placeholder {
+    color: #b2b2b2;
+    font-family: 'Verlag-Light', sans-serif;
+    font-size: 1.6em;
+}
+
+.contact ::-moz-placeholder {
+    color: #b2b2b2;
+    font-family: 'Verlag-Light', sans-serif;
+    font-size: 1.6em;
+}
+
+.contact :-ms-input-placeholder {
+    color: #b2b2b2;
+    font-family: 'Verlag-Light', sans-serif;
+    font-size: 1.6em;
+}
+
+.contact-info h3 {
+    color: #3c3b40;
+    margin: 0.25rem 0 0.75rem 0;
+}
+
+.contact-info h3.light { margin: 0.75rem 0; }
+
+.contact-info h3 a {
+    font-family: 'Verlag-Light';
+    font-size: 1em;
+    text-transform: none;
+}
+
+.contact-info h3 a:hover {
+    color: #9e1418;
+    text-decoration: underline;
+}
+
+/*---advertise with us---*/
+.advertise section { border-bottom: 1px solid #f2f2f2; }
+.advertise section:last-child, .advertise section section { border-bottom: none; }
+.advertise section p { font-size: 1.1rem; }
+.kads-main{position:relative;margin:0 auto;}
+.sidebar section { margin: 25px 0; }
+
+
+.sidebar ul{margin:0; padding:0;width:100%;}
+.sidebar ul li {
+    margin:1rem 0 0 0;
+    padding:0;
+    width:100%;
+    display:block;
+    list-style-type:none;
+    background: #134d89;
+    color:#fff;
+    font-family: 'Verlag-Bold';
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    text-align:center;
+}
+
+.sidebar ul li ul li {
+
+    background:#fff;
+    text-align:left;
+    color: #585858;
+    width:100%;
+    margin:0;
+    padding:0;
+}
+
+
+.sidebar h6, .sidebar p {
+    color: #585858;
+    font-family: 'Verlag-Bold';
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    margin-bottom: 0.25rem;
+}
+
+.sidebar a {
+    color: #bb2529;
+    margin-top:.5rem;
+}
+
+.sidebar a:hover {
+    color: #9e1418;
+    text-decoration: underline;
+}
+
+
+
+
+
+/*---footer---*/
+footer {
+    border-top: 10px solid #134d89;
+    padding: 20px;
+}
+
+footer nav ul {
+    display: inline-block;
+    margin-left: 0;
+}
+
+footer nav ul.center {
+    border-left: 1px solid #595959;
+    border-right: 1px solid #595959;
+}
+
+footer nav li { list-style: none; }
+
+footer nav li a, footer .social a {
+    color: #bb2529;
+    font-family: 'Verlag-Light', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+footer nav li a:hover, footer .social a:hover {
+    color: #9e1418;
+    text-decoration: underline;
+}
+
+footer nav li a.disabled {
+    color: #ccc;
+    cursor: default;
+}
+
+footer nav li a.disabled:hover {
+    color: #ccc;
+    text-decoration: none;
+}
+
+footer .social { text-align: center; }
+
+footer .social a {
+    background: url('../images/sprite-social.png') no-repeat;
+    display: inline-block;
+    height: 20px;
+    margin: 0 5px;
+    width: 20px;
+}
+
+footer .social a span { display: none; }
+footer .social a.thepoint { background-position: 0 -2px; }
+footer .social a.thepoint:hover { background-position: 0 -32px; }
+footer .social a.facebook { background-position: -34px -2px; }
+footer .social a.facebook:hover { background-position: -34px -32px; }
+footer .social a.twitter { background-position: -67px -2px; }
+footer .social a.twitter:hover { background-position: -67px -32px; }
+footer .social a.instagram { background-position: -100px -2px; }
+footer .social a.instagram:hover { background-position: -100px -32px; }
+
+footer .social a.youtube {
+    background-position: -132px -2px;
+    width: 60px;
+}
+
+footer .social a.youtube:hover { background-position: -132px -32px; }
+footer .copyright { padding: 20px; }
+
+footer .copyright p, footer .copyright a {
+    font-family: 'Verlag-Light';
+    font-size: 1rem;
+    margin: 0;
+}
+
+footer .copyright a:hover {
+    color: lime;
+    text-decoration: underline;
+}
+
+/*---media queries---*/
+@media only screen and (max-width: 980px) {
+    /*---home---*/
+    .weather .forecast .current-stats {
+        border-bottom: 1px solid #3c3b40;
+        border-right: none;
+    }
+
+    .weather .thermometer { min-width: 20px; }
+    .weather .main-stats table { width: 100%; }
+
+    .weather .forecast td {
+        display: block;
+        width: 100%;
+    }
+
+    .weather .forecast .sunrise, .weather .forecast .sunset {
+        border-bottom: none;
+        display: inline-block;
+        width: 50%;
+    }
+
+    .weather .forecast .precipitation, .weather .forecast .uv, .weather .forecast .pollen {
+        display: inline-block;
+        width: 33.33333%;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    .weather .location .city, .weather .location .latlong {
+        display: block;
+        float: none;
+    }
+
+    footer nav ul.center { border: none; }
+}
+
+@media only screen and (max-width: 758px) { }
+
+@media only screen and (max-width: 640px) {
+    /*---header---*/
+    .tagline { text-align: center; }
+
+    /*---home---*/
+    .dj-img img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .dj-info {
+        margin-top: 10px;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .dj-info .listen-now { margin-bottom: 15px; }
+
+    .button { font-size: 1em; }
+    .feature ::-webkit-input-placeholder { font-size: 1.2em; }
+    .feature :-moz-placeholder { font-size: 1.2em; }
+    .feature ::-moz-placeholder { font-size: 1.2em; }
+    .feature :-ms-input-placeholder {   font-size: 1.2em; }
+    .module-area .columns.left, .module-area .columns.right { padding: 0; }
+    .news ul { padding: 0 0.75rem; }
+    .news .small-block-grid-2 > li:nth-of-type(n) { padding: 0 0 1.25rem 0.625rem; }
+    .news .small-block-grid-2 > li:nth-of-type(2n+1) { padding: 0 0 1.25rem 0.625rem; }
+    .module.featured .title { border-top: 10px solid #3c3b40; }
+    /*---shows---*/
+    .shows section {
+        display: block;
+        margin: 0 auto 1rem auto;
+    }
+
+    .shows .info, .shows a .bio {
+        min-height: 145px;
+    }
+
+    .shows a .bio {
+        margin-top: -145px;
+    }
+
+    .columns.show-list {
+        margin-top: 50px;
+        padding: 0;
+    }
+
+    /*---contact---*/
+    .contact { border-bottom: 1px solid #f2f2f2; }
+
+    .contact-info {
+        margin-top: 1.25rem;
+        text-align: center;
+    }
+
+    /*---advertise---*/
+    .advertise section:last-child { border-bottom: 1px solid #f2f2f2; }
+    .sidebar { text-align: center; }
+
+    /*---footer---*/
+    footer nav { margin-bottom: 20px; }
+
+    footer nav ul {
+        margin: 0;
+        text-align: center;
+    }
+}

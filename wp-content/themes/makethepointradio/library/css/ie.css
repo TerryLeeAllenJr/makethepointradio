@@ -1,0 +1,77 @@
+/*---ie8 fixes---*/
+.ie8 .tagline { text-align: center; }
+.ie8 .feature { background: #d2cfd6 url('../images/bg-now-playing.jpg') bottom center no-repeat; }
+
+.ie8 .now-playing {
+	margin: 0 10%;
+	max-width: 80%;
+	text-align: center;
+}
+
+.ie8 .dj-info h1 { font-size: 34px; }
+.ie8 .dj-info h2 { font-size: 27px; }
+
+.ie8 .listen-now {
+	background-position: top center;
+	margin: 0 auto 20px auto;
+	text-align: center;
+	width: 100%;
+}
+
+.ie8 .listen-now:hover { background-position: center -59px; }
+
+.ie8 .now-playing {
+	margin: 0 10%;
+	max-width: 80%;
+	text-align: center;
+}
+
+.ie8 .feature form {
+	margin: 20px 10%;
+	width: 80%;
+}
+
+.ie8 .feature label {
+	color: #fff;
+	display: block;
+	font-family: 'Verlag-Black', sans-serif;
+	margin-bottom: 5px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.ie8 .feature .email {
+	height: 35px;
+	line-height: 35px;
+	margin-bottom: 10px;
+	padding: 0 7px;
+}
+
+.ie8 .module .title { font-size: 34px; }
+
+.ie8 .news ul {
+	margin: 0 auto;
+	max-width: 710px;
+	padding: 5px;
+}
+
+.ie8 .news li {
+	display: inline-block;
+	height: 320px;
+	max-width: 350px;
+	padding: 0 15px 20px 15px;
+	width: 50%;
+}
+
+.ie8 .module .content { padding: 0 5%; }
+.ie8 .featured .title { border-top: 10px solid #3c3b40; }
+.ie8 .poll-buttons { padding: 15px 0; }
+.ie8 .poll-buttons .button { padding: 5px 15px; }
+.ie8 .poll a span { line-height: 0.1em; }
+.ie8 footer nav { margin-bottom: 20px; }
+
+.ie8 footer nav ul {
+	border: none;
+	margin: 0;
+	text-align: center;
+}
